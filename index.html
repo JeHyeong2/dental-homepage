@@ -47,7 +47,9 @@
     display: flex; align-items: center; justify-content: space-between;
     min-height: 64px; gap: 16px;
   }
-  .brand { font-weight: 800; font-size: 1.15rem; color: var(--accent-deep); text-decoration: none; }
+  .brand { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent-deep); text-decoration: none; }
+  .brand img { width: 42px; height: 56px; object-fit: contain; margin-right: 10px; }
+  .brand-name { font-weight: 800; font-size: 1.15rem; }
   .menu { display: flex; gap: 4px; flex-wrap: wrap; }
   .menu a {
     display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px;
@@ -202,7 +204,7 @@
 <!-- 맨 위 메뉴 줄 -->
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="#top">솔바람치과의원</a>
+    <a class="brand" href="#top"><img src="images/clinic-logo.png" alt="솔바람치과의원 로고"><span class="brand-name">솔바람치과의원</span></a>
     <nav class="menu" aria-label="주요 메뉴">
       <a href="#about">병원 소개</a>
       <a href="#treatment">진료 안내</a>
